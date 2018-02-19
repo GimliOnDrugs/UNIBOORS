@@ -10,7 +10,7 @@ interface Presenter {
     interface LessonsPresenter : Presenter
 
     interface NavigationPresenter : Presenter {
-        fun handleBeacon(classroomName: String)
+//        fun handleBeacon(classroomName: String)
 
         fun startRegionMonitoring()
     }

@@ -2,6 +2,7 @@ package com.example.gzano.uniboors;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -30,6 +31,12 @@ public class LessonsAndPlacesActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(R.id.places_fragment_container, lessonsFragment).commit();
 
 
+    }
+
+    public void onResume() {
+        super.onResume();
+        FloatingActionButton floatingActionButton=findViewById(R.id.fab_lessons);
+        floatingActionButton.setVisibility(View.VISIBLE);
     }
 
     public void onNavigationFABClick(View view) {

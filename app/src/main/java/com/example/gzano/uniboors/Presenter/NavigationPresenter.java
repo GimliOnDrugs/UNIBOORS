@@ -27,14 +27,14 @@ public class NavigationPresenter implements Presenter.NavigationPresenter {
         this.beaconManager = beaconManager;
     }
 
-    @Override
-    public void handleBeacon(@NonNull String classroomName) {
-//        Log.i("WEBVIEW", "starting new web view content");
-//        classDetailsPicker.setBeaconRoomKeyPicked(classroomKey);
-//        Log.i("tagdet", classDetailsPicker.getBeaconRoomKeyPicked());
-//        if (classDetailsPicker.getBeaconRoomKeyPicked() != null)
-//            webView.loadUrl("javascript:load()");
-    }
+//    @Override
+//    public void handleBeacon(@NonNull String classroomName) {
+////        Log.i("WEBVIEW", "starting new web view content");
+////        classDetailsPicker.setBeaconRoomKeyPicked(classroomKey);
+////        Log.i("tagdet", classDetailsPicker.getBeaconRoomKeyPicked());
+////        if (classDetailsPicker.getBeaconRoomKeyPicked() != null)
+////            webView.loadUrl("javascript:load()");
+//    }
 
 
     @Override

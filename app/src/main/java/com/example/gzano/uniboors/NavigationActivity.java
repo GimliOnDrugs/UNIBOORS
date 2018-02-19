@@ -27,6 +27,8 @@ import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.BeaconParser;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Objects;
+
 public class NavigationActivity extends AppCompatActivity implements ActivityView.NavigationView {
 
     protected static final String TAG = "MonitoringActivity";
@@ -126,12 +128,14 @@ public class NavigationActivity extends AppCompatActivity implements ActivityVie
                     @Override
                     public void onDismiss(DialogInterface dialog) {
                         Log.i("WEBVIEW", "starting new web view content");
-                        if(classroomKey=="AulaA"){
+                        if(Objects.equals(classroomKey, "AulaA")){
                             webView.loadUrl("javascript:load('AulaA')");
+                            navigationPresenter.startRegionMonitoring();
 
                         }
                         else{
                             webView.loadUrl("javascript:load('AulaB')");
+                            navigationPresenter.startRegionMonitoring();
 
                         }
 
